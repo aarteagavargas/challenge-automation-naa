@@ -258,3 +258,8 @@ La prueba lee una fila por Pokémon desde `Datos-pruebas.xlsx` y:
 - Valida extensiones `.jpg`, `.jpeg`, `.png` o `.svg` sin distinguir mayúsculas.
 - Valida que el archivo exista, tenga contenido y pese menos de 500000 bytes.
 - Registra fecha y hora de finalización.
+
+## Autor
+
+- **Neila Alejandra Arteaga Vargas**
+- [LinkedIn](https://www.linkedin.com/in/neila-alejandra-arteaga-vargas-18162593/)
