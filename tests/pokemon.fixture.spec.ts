@@ -1,13 +1,7 @@
 import { test, expect } from './fixtures/environment.fixture';
 import type { APIRequestContext } from '@playwright/test';
 import { readPokemonData, type PokemonTestData } from './utils/excel-data';
-
-function formatCompletionTime(): string {
-  return new Date().toLocaleString('es-CO', {
-    dateStyle: 'full',
-    timeStyle: 'long',
-  });
-}
+import { formatCompletionTime } from './utils/date-time';
 
 async function validatePokemonLookup(
   request: APIRequestContext,
@@ -58,7 +52,6 @@ test('Validar Pokémon leídos desde Datos-pruebas.xlsx por ID y nombre', async 
     console.log(
       `[${environment.name}] Prueba completada`,
       `| duración total: ${Date.now() - startedAt} ms`,
-      `| finalización: ${formatCompletionTime()}`,
     );
   } finally {
     console.log(`[${testInfo.title}] Finalizó el test: ${formatCompletionTime()}`);
