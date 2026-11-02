@@ -233,16 +233,6 @@ npx playwright test tests/pokemon.fixture.spec.ts --reporter=line
 - `playwright.config.ts`: configuración de navegadores, reportes y ejecución.
 - `.github/workflows/playwright.yml`: ejecución automática de pruebas en GitHub Actions.
 
-## 10. Registrar el resultado en GitHub
-
-```bash
-git add .
-git commit -m "Add automated Playwright tests"
-git push origin main
-```
-
-GitHub Actions ejecutará automáticamente las pruebas al realizar un `push` o abrir una `pull request` sobre las ramas `main` o `master`. El reporte HTML también puede descargarse como artefacto desde la ejecución correspondiente.
-
 ## Seguridad
 
 - Nunca escribir claves reales dentro de archivos `.spec.ts`, configuraciones o funciones.
